@@ -9,13 +9,13 @@ const Sidebar = () => {
     };
 
     return (
-        <>
+        <> 
+        {/* button */}
             <button className="hamburger" onClick={toggleSidebar}>
                 <span className={`bar ${isOpen ? 'change' : ''}`}></span>
                 <span className={`bar ${isOpen ? 'change' : ''}`}></span>
                 <span className={`bar ${isOpen ? 'change' : ''}`}></span>
             </button>
-
 
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
 

@@ -1,5 +1,3 @@
-
-
 html, body {
   margin: 0;
   padding: 0;
@@ -11,7 +9,6 @@ html, body {
   text-align: center;
 }
 
-  /* Please Avenir is a paid font; using fallback to mimic it. */
 body {
   font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
