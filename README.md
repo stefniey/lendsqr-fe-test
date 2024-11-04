@@ -57,6 +57,10 @@ Here's an overview of the project's folder structure:
     ```
 
   - **Access the application**: Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+ 
+## Admin Login Details 
+ - adedeji@lendsqr.com
+ - password:test123
 
 ## Technology Stack
 - **Frontend**: React, TypeScript
@@ -79,9 +83,6 @@ Here's an overview of the project's folder structure:
   
   ![User Page](public/images/user.jpeg)
 
-- **User Details Page**:
-  
-  ![User Details Page](public/images/userDetail.jpeg)
 
   ## Contributing
 - **Fork the repository**.
