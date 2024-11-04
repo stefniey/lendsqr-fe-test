@@ -25,7 +25,8 @@ This project is a responsive frontend application that provides a user managemen
 ## Project Structure
 Here's an overview of the project's folder structure:
 
-![Project Structure](./public/images/projectStructure.jpeg)
+![Project Structure](public/images/projectStructure.jpeg)
+
 
 
 ## Getting Started
