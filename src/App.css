@@ -1,0 +1,45 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+  /* Please Avenir is a paid font; using fallback to mimic it. */
+body {
+  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+  
+}
+
+.App-logo {
+  height: 15vmin; 
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

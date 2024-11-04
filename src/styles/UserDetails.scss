@@ -1,0 +1,402 @@
+.user-details-container {
+  width: 75%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px 0 0;
+  margin-bottom: 40px;
+}
+
+.back-to-users {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  font-size: 16px;
+  padding: 50px 20px 0 30px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 18.77px;
+  color: #545f7d;
+
+  img {
+    margin-right: 8px;
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.user-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+
+  .user-details {
+    margin: 0;
+    font-size: 24px;
+    line-height: 28.15px;
+    color: #213f7d;
+    font-family: "Work Sans", sans-serif;
+  }
+
+  .status-indicators {
+    display: flex;
+    gap:20px;
+
+    .blacklist-user {
+      padding: 5px 10px;
+      border: 1px solid #e4033b;
+      color: #e4033b;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .active-user {
+      padding: 5px 10px;
+      border: 1px solid #39cdcc;
+      color: #39cdcc;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+  }
+}
+
+// user-main-info
+.user-main-info {
+  display: flex;
+  gap: 3em;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 96%;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.81px;
+  color: #213f7d;
+}
+
+.p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.42px;
+  color: #545f7d;
+}
+
+.profile-picture img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.tier {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.42px;
+  color: #545f7d;
+}
+
+.amount {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.81px;
+  color: #213f7d;
+}
+
+.bank {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.08px;
+  color: #213f7d;
+}
+
+.star-icon {
+  display: flex;
+  gap: 0.4em;
+}
+
+.vertical-line {
+  width: 0.8px;
+  background-color: #e0e0e0;
+  height: auto;
+  align-self: stretch;
+}
+
+.navigation-tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: white;
+  width: 96%;
+  border-radius: 0 0 8px 8px;
+}
+
+.document {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  text-align: center;
+  color: #000;
+}
+
+.document::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #39cdcc;
+  bottom: 76px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.document:hover::after {
+  transform: scaleX(1);
+}
+
+.document:hover {
+  color: #39cdcc;
+}
+
+// user content styling
+.content {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+
+.texts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.header {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  color: #213F7D;
+
+}
+
+.header-text {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.08px;
+  color: #545f7d;
+}
+
+.detail-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.77px;
+  color: #545f7d;
+}
+
+// Mobile responsiveness styling
+@media (max-width: 768px) {
+  .user-details-container {
+    width: 88%;
+    padding: 10px 26px 0 5px;
+    margin-bottom: 20px;
+  }
+
+  .back-to-users {
+    margin-top: 50px;
+    padding: 30px 10px 0 10px;
+  }
+
+  .user-details-header {
+    align-items: center;
+    justify-content: center;
+
+  }
+  .status-indicators{
+    margin-top: 30px ;
+    gap: 9px;
+  }
+
+  .user-main-info {
+    gap: 0.5em;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .profile-picture {
+    display: none;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .p,
+  .user-p,
+  .amount,
+  .bank,
+  .document,
+  .content-text,
+  .detail-text {
+    font-size: 14px;
+  }
+
+  .navigation-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+  }
+  .content {
+    width: 90%;
+  }
+  .back-to-users {
+    width: 90%;
+  }
+  .user-details-header {
+    width: 90%;
+  }
+
+  .texts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// tablet view styling
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+    padding: 15px; 
+  }
+
+  .user-details-container {
+    width: 90%; 
+    margin: auto;
+    padding: 10px 20px;
+  }
+
+  .user-details-header {
+    padding: 20px 10px;
+  }
+
+  .user-main-info {
+    padding: 15px;
+  }
+
+  .profile-picture {
+    width: 80px;
+  }
+
+  h3 {
+    font-size: 20px; 
+  }
+
+  .amount,
+  .bank,
+  .user-p {
+    font-size: 14px; 
+  }
+
+  .navigation-tabs {
+    width: 95%;
+  }
+  .back-to-users{
+    margin-left: -8px;
+  }
+}
+/* iPad Mini in Portrait and Landscape */
+@media only screen and (min-width: 744px) and (max-width: 834px) and (orientation: portrait),
+       only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: landscape) {
+  /* Your styles for iPad Mini */
+  .container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+    padding: 15px; 
+  }
+
+  .user-details-container {
+    width: 100%; 
+    margin: auto;
+    padding: 10px 20px;
+  }
+
+
+  .user-details-header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    
+  }
+
+  .user-main-info {
+    padding: 15px;
+  }
+  .user-main-info {
+    gap: 3.5em;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .profile-picture {
+    width: 80px;
+  }
+
+  h3 {
+    font-size: 20px; 
+  }
+
+  .amount,
+  .bank,
+  .user-p {
+    font-size: 14px; 
+  }
+
+  .navigation-tabs {
+    width: 89%;
+  }
+  .back-to-users{
+    margin-left: -8px;
+    margin-bottom: 20px;
+  }
+}
+
