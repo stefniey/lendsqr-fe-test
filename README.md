@@ -1,46 +1,95 @@
-# Getting Started with Create React App
+# lendsqr-fe-test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Dashboard with Mock API Integration
+This project is a responsive frontend application that provides a user management interface with four key pages: Login, Dashboard, User Page, and User Details Page. The focus is on delivering an intuitive and accessible user experience while integrating with a mock API to simulate real-world data handling.
 
-## Available Scripts
+## Key Features
+- **Login Page**: Provides a basic authentication UI to simulate user login.
+- **Dashboard**: Acts as the central hub for quick navigation to other pages, displaying summary data for the application.
+- **User Page**: Lists 500 users fetched from a mock API, including essential details for quick browsing.
+- **User Details Page**: Displays detailed information for each individual user. User data is stored locally using Local Storage or IndexedDB to improve load speeds and enable offline access.
 
-In the project directory, you can run:
+## Technical Details
+- **Mock API Integration**: Data is fetched from a mock API containing 500 records to simulate real-world data scenarios.
+- **Local Storage / IndexedDB**: Storing user details locally enhances performance and provides data persistence across sessions.
+- **Responsive Design**: The application is optimized for various screen sizes, including mobile, tablet, and desktop, ensuring a consistent and accessible experience across devices.
 
-### `npm start`
+## Table of Contents
+1. [Project Structure](#project-structure)
+2. [Getting Started](#getting-started)
+3. [Technology Stack](#technology-stack)
+4. [Screenshots](#screenshots)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Structure
+Here's an overview of the project's folder structure:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Project Structure](assets/projectStructure.jpeg)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+- **Prerequisites**:
+  - **Node.js** (v14+ recommended)
+  - **npm** or **yarn**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Installation**:
+  - **Clone the repository**:
+    ```bash
+    git clone https://github.com/stefniey/lendsqr-fe-test.git
+    cd lendsqr-fe-test
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - **Start the development server**:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-### `npm run eject`
+  - **Access the application**: Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technology Stack
+- **Frontend**: React, TypeScript
+- **Styling**: Sass for modular and maintainable styling
+- **State Management**: Local Storage or IndexedDB for local data persistence
+- **Mock API**: Used to simulate user data and testing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Screenshots
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Login Page**:
+  
+  ![Login Page](assets/login.jpeg)
 
-## Learn More
+- **Dashboard**:
+  
+  ![Dashboard](assets/dashboard.jpeg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **User Page**:
+  
+  ![User Page](assets/user.jpeg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **User Details Page**:
+  
+  ![User Details Page](assets/userDetail.jpeg)
+
+  ## Contributing
+- **Fork the repository**.
+- **Create a new branch** for your feature (`feature-name`).
+- **Commit your changes**.
+- **Push to your branch**.
+- **Open a pull request**.
+
+## License
+This project is licensed under the MIT License.
+
+
