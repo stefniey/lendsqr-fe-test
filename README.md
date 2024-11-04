@@ -69,7 +69,7 @@ Here's an overview of the project's folder structure:
 
 - **Login Page**:
   
-  ![Login Page](assets/login.jpeg)
+  ![Login Page](public/images/login.jpeg)
 
 - **Dashboard**:
   
