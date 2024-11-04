@@ -25,7 +25,7 @@ This project is a responsive frontend application that provides a user managemen
 ## Project Structure
 Here's an overview of the project's folder structure:
 
-![Project Structure](public/images/projectStructure.jpeg)
+![Project Structure](public/images/projectStructure..jpeg)
 
 
 
@@ -73,15 +73,15 @@ Here's an overview of the project's folder structure:
 
 - **Dashboard**:
   
-  ![Dashboard](assets/dashboard.jpeg)
+  ![Dashboard](public/images/dashboard.jpeg)
 
 - **User Page**:
   
-  ![User Page](assets/user.jpeg)
+  ![User Page](public/images/user.jpeg)
 
 - **User Details Page**:
   
-  ![User Details Page](assets/userDetail.jpeg)
+  ![User Details Page](public/images/userDetail.jpeg)
 
   ## Contributing
 - **Fork the repository**.
