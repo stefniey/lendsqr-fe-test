@@ -11,7 +11,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   // API URL to fetch users
-  const apiUrl = 'https://contentapi-m9vl.onrender.com';
+  const apiUrl = 'https://contentapi-m9vl.onrender.com/';
   const staticPassword = 'test123';    // static password on for admin user only
 
 

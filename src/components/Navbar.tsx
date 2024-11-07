@@ -29,15 +29,10 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
         console.log("API response:", data);
 
         if (Array.isArray(data) && data.length > 0) {
-
-          // Log the email being searched for
           console.log(`Searching for user with email: ${loggedInEmail}`);
 
-          // Find  user with the matching email
           const user = data.find((user) => {
             const userEmail = user.personalInfo?.email || '';
-
-            // Log the current user's email for comparison
             console.log(`Comparing with user email: ${userEmail}`);
             return userEmail.toLowerCase() === loggedInEmail.toLowerCase();
           });
@@ -70,6 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSearch(searchQuery);
+    setSearchQuery(''); // Clear the input field after search
   };
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -98,7 +94,6 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
         </a>
 
         <form onSubmit={handleSearch} className="form-container">
-
           <div className="input-container">
             <input
               type="text"
@@ -107,9 +102,10 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
               onChange={handleInputChange}
               className="input"
             />
-            <button className="btn" type="submit"><img src="/images/search.svg" alt="" /></button>
+            <button className="btn" type="submit">
+              <img src="/images/search.svg" alt="" />
+            </button>
           </div>
-
         </form>
 
         <div className="end-icons">
@@ -136,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                 onClick={() => document.getElementById('profile-pic-upload')?.click()}
               />
             </label>
-            <span className="profile-name">{userName}</span>
+            <span className="profile-name">Adedeji</span>
 
             <div className="dropdown">
                 ▼    
@@ -150,4 +146,3 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
 };
 
 export default Navbar;
-
