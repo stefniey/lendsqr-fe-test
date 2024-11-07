@@ -83,6 +83,10 @@ Here's an overview of the project's folder structure:
   
   ![User Page](public/images/user.jpeg)
 
+  - **Userdetails Page**:
+  
+  ![User Page](public/images/userdetails.jpeg)
+
 
   ## Contributing
 - **Fork the repository**.
